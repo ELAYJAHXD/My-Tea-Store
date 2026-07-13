@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanto Tea</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #faf6f0; 
+            color: #3d2b1f; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .custom-navbar {
+            background-color: #2b1e16 !important; 
+            border-bottom: 3px solid #c68a4c; 
+        }
+
+        .custom-navbar .navbar-brand {
+            color: #c68a4c !important; 
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .custom-navbar .nav-link {
+            color: #faf6f0 !important; 
+            transition: color 0.2s ease-in-out;
+            font-weight: 500;
+        }
+
+        .custom-navbar .nav-link:hover, 
+        .custom-navbar .nav-link.active {
+            color: #c68a4c !important; 
+        }
+
+        .custom-cafe-header {
+            background-color: #2b1e16 !important; 
+            color: #faf6f0 !important;
+            background-image: linear-gradient(rgba(43, 30, 22, 0.85), rgba(43, 30, 22, 0.85)), url('https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-cafe-header h1 {
+            color: #c68a4c !important; 
+        }
+
+        .custom-sidebar-accent {
+            border-top: 4px solid #c68a4c !important; 
+            background-color: #ffffff;
+        }
+
+        .highlight-badge {
+            color: #2b1e16 !important;
+            font-weight: 600;
+            background-color: #f3eade;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .btn-caramel {
+            background-color: #c68a4c;
+            color: #ffffff;
+            border: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-caramel:hover {
+            background-color: #ab733b;
+            color: #ffffff;
+        }
+
+        @media (max-width: 640px) {
+            .custom-navbar {
+                background-color: rgba(43, 30, 22, 0.98) !important; 
+                padding: 0.5rem 0;
+            }
+            .custom-navbar .nav-link {
+                padding: 8px 12px !important;
+                border-radius: 4px;
+            }
+            .custom-cafe-header {
+                padding: 2rem 1.25rem !important; 
+            }
+            .custom-cafe-header h1 {
+                font-size: 1.75rem !important; 
+            }
+            .custom-cafe-header p.lead {
+                font-size: 1rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark custom-navbar shadow-sm sticky-top mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Kanto Tea</a>
+        
+        <button class="navbar-toggler border-0" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#globalCafeNavbar" 
+                aria-controls="globalCafeNavbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="globalCafeNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.gallery.html">Menu Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="log.in.html">Portal Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    
+    <div class="custom-cafe-header text-center text-md-start p-4 p-md-5 rounded-3 mb-4 shadow-sm">
+        <h1 class="fw-bold mb-2">Welcome to Kanto Tea</h1>
+        <p class="lead mb-0">KANTO TEA MAPAPA KANTO TEA KA SA SARAP!!</p>
+    </div>
+
+    <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid #c68a4c !important;">
+        <div class="card-body p-4">
+            <h3 class="card-title fw-bold text-dark mb-3">Our Promise To You</h3>
+            <p class="card-text text-secondary mb-4">
+                We make sure everything we serve is fresh, tasty, and made with love. Here is what you can look forward to every time you visit:
+            </p>
+            
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-white border rounded-3 h-100">
+                        <h5 class="fw-bold h6 text-dark">1. Premium Loose Tea Leaves</h5>
+                        <p class="small text-muted mb-0">
+                            We pick out great tea leaves from local gardens and premium estates, blending them ourselves right here in the shop every Tuesday morning.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-white border rounded-3 h-100">
+                        <h5 class="fw-bold h6 text-dark">2. Homemade Pastries</h5>
+                        <p class="small text-muted mb-0">
+                            We bake our treats fresh every morning from scratch, letting the dough rest overnight to make sure your croissants are warm and flaky.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-white border rounded-3 h-100">
+                        <h5 class="fw-bold h6 text-dark">3. Cozy Seating & Wi-Fi</h5>
+                        <p class="small text-muted mb-0">
+                            We have fast, free Wi-Fi and plenty of comfortable spots to get some work done, read a book, or chat with friends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        
+        <main class="col-12 col-md-8">
+            <div class="card h-100 border-0 shadow-sm p-3 bg-white">
+                <div class="card-body">
+                    <h2 class="card-title fw-bold h4 text-dark mb-3">Our Drink Highlight: Classic Taro Cream Blend</h2>
+                    <p class="card-text">We love mixing up fun and cozy flavors. Come try our creamy and distinctly nutty taro root blend, infused with premium black tea leaves and crowned with a dense layer of sweet salted cream cheese foam to brighten up your day..</p>
+                    
+                    <div class="rounded-3 overflow-hidden my-3 shadow-sm">
+                        <img src="lavendertea.avif" 
+                             class="img-fluid d-block w-100" 
+                             alt="Freshly brewed honey lavender tea display">
+                    </div>
+                    
+                    <p class="card-text text-muted small">
+                        We always use simple, real ingredients. Check out everything else we serve on our <span class="highlight-badge"><a href="menu.gallery.html" class="text-decoration-none text-dark">Menu Gallery</a></span> page.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <aside class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm custom-sidebar-accent p-3">
+                <div class="card-body">
+                    <h3 class="fw-bold h5 text-dark mb-3">Shop Info</h3>
+                    
+                    <p class="mb-1"><strong>Hours:</strong></p>
+                    <ul class="list-unstyled text-muted small mb-3 ps-1">
+                        <li>Monday - Friday: 7:00 AM - 8:00 PM</li>
+                        <li>Saturday - Sunday: 8:00 AM - 9:00 PM</li>
+                    </ul>
+                    
+                    <hr class="text-black-50 my-3">
+                    
+                    <p class="mb-2"><strong>Save a Spot:</strong></p>
+                    <p class="text-muted small mb-3">Have a study group or a morning meeting coming up? Sign up for a free account on our website to save a table ahead of time.</p>
+                    
+                    <a href="register.html" class="btn btn-caramel w-100 fw-bold py-2 shadow-sm">
+                        Reserve a Table
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+    </div> </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
