@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Kanto Tea</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #faf6f0; 
+            color: #3d2b1f; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .custom-navbar {
+            background-color: #2b1e16 !important; 
+            border-bottom: 3px solid #c68a4c; 
+        }
+
+        .custom-navbar .navbar-brand {
+            color: #c68a4c !important; 
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .custom-navbar .nav-link {
+            color: #faf6f0 !important; 
+            transition: color 0.2s ease-in-out;
+            font-weight: 500;
+        }
+
+        .custom-navbar .nav-link:hover, 
+        .custom-navbar .nav-link.active {
+            color: #c68a4c !important; 
+        }
+
+        .custom-cafe-header {
+            background-color: #2b1e16 !important; 
+            color: #faf6f0 !important;
+            background-image: linear-gradient(rgba(43, 30, 22, 0.85), rgba(43, 30, 22, 0.85)), url('https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-cafe-header h1 {
+            color: #c68a4c !important; 
+        }
+
+        .menu-section-title {
+            color: #2b1e16;
+            font-weight: 700;
+            border-bottom: 2px solid #c68a4c;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-gallery-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background-color: #ffffff;
+            border: none;
+        }
+
+        .menu-gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(43, 30, 22, 0.1) !important;
+        }
+
+        .menu-gallery-card img {
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .badge-espresso {
+            background-color: #2b1e16;
+            color: #faf6f0;
+        }
+
+        .badge-caramel {
+            background-color: #c68a4c;
+            color: #ffffff;
+        }
+
+        .price-tag {
+            color: #c68a4c;
+            font-weight: 700;
+            font-size: 1.15rem;
+        }
+
+        @media (max-width: 640px) {
+            .custom-navbar {
+                background-color: rgba(43, 30, 22, 0.98) !important;
+                padding: 0.5rem 0;
+            }
+            .custom-navbar .nav-link {
+                padding: 8px 12px !important;
+                border-radius: 4px;
+            }
+            .custom-cafe-header {
+                padding: 2rem 1.25rem !important;
+            }
+            .custom-cafe-header h1 {
+                font-size: 1.75rem !important;
+            }
+            .custom-cafe-header p.lead {
+                font-size: 1rem !important;
+            }
+            .menu-gallery-card img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Integrated Nav Bar -->
+<nav class="navbar navbar-expand-md navbar-dark custom-navbar shadow-sm sticky-top mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Kanto Tea</a>
+        
+        <button class="navbar-toggler border-0" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#globalCafeNavbar" 
+                aria-controls="globalCafeNavbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="globalCafeNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.gallery.html">Menu Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="log.in.html">Portal Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="custom-cafe-header text-center text-md-start p-4 p-md-5 rounded-3 mb-5 shadow-sm">
+        <h1 class="fw-bold mb-2">Menu Gallery</h1>
+        <p class="lead mb-0">Explore our curated selection of premium handcrafted teas and perfectly paired fresh pastries.</p>
+    </div>
+
+    <h2 class="menu-section-title">Artisanal Tea Selection</h2>
+    <div class="row g-4 mb-5">
+        
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="milktea.avif" alt="Wintermelon Milk Tea">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-espresso">Best Seller</span>
+                        <span class="price-tag">₱110.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Wintermelon Black Tea with Boba</h3>
+                    <p class="card-text text-secondary small mb-0">The ultimate classic. Rich, slow-brewed black tea infused with sweet wintermelon syrup and served with house-made brown sugar tapioca pearls.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="teaheader.avif" alt="Ceremonial Matcha Latte">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-caramel">Premium Pure</span>
+                        <span class="price-tag">₱145.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Ceremonial Matcha Latte</h3>
+                    <p class="card-text text-secondary small mb-0">Authentic stone-ground Japanese green tea whisked traditionally to perfection, layered over smooth steamed milk with a hint of cane sweetness.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="greentea.avif" alt="Honey Jasmine Fruit Tea">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-espresso">Fruit Tea</span>
+                        <span class="price-tag">₱105.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Honey Jasmine Green Tea</h3>
+                    <p class="card-text text-secondary small mb-0">Fragrant loose-leaf jasmine green tea brewed fresh daily, lightly shaken with premium organic honey and served over ice for a floral finish.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="lavendertea.avif" alt="Signature Taro Milk Tea">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-caramel">House Blend</span>
+                        <span class="price-tag">₱125.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Classic Taro Cream Blend</h3>
+                    <p class="card-text text-secondary small mb-0">Creamy and distinctly nutty taro root blend infused with premium black tea leaves, crowned with a dense layer of sweet salted cream cheese foam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="oodes tea.avif" alt="Smoked Roasted Oolong Tea">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-espresso">Loose Leaf</span>
+                        <span class="price-tag">₱115.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Roasted Iron Goddess Oolong</h3>
+                    <p class="card-text text-secondary small mb-0">Traditional Tie Guan Yin oolong tea leaves meticulously roasted over charcoal, delivering a deep, complex, and comforting amber liquor brew.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="creamsontea.avif" alt="Crimson Berry Hibiscus Herbal Tea">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-caramel">Caffeine-Free</span>
+                        <span class="price-tag">₱95.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Crimson Berry Hibiscus</h3>
+                    <p class="card-text text-secondary small mb-0">A tangy, vibrant red infusion of dried premium Egyptian hibiscus petals, sweet elderberries, and citrus peels. High in antioxidants.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="menu-section-title">Fresh Tea Partners</h2>
+    <div class="row g-4 mb-5">
+        
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="crossaint.avif" alt="Golden Butter Croissant">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-espresso">Freshly Baked</span>
+                        <span class="price-tag">₱95.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Golden Butter Croissant</h3>
+                    <p class="card-text text-secondary small mb-0">Flaky, multi-layered French pastry baked fresh every single morning. Best served warm alongside a cup of roasted Oolong or Black tea.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=500&q=80" alt="Matcha Cookie">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-caramel">Chef's Choice</span>
+                        <span class="price-tag">₱75.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Matcha White Choco Cookie</h3>
+                    <p class="card-text text-secondary small mb-0">Thick and wonderfully chewy gourmet cookies crafted with authentic Japanese matcha powder and packed with premium white chocolate chunks.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm menu-gallery-card overflow-hidden">
+                <img src="dough.avif" alt="Artisanal Bread">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-espresso">Savory Pair</span>
+                        <span class="price-tag">₱120.00</span>
+                    </div>
+                    <h3 class="fw-bold h5 text-dark mb-2">Cream Cheese Garlic Sourdough</h3>
+                    <p class="card-text text-secondary small mb-0">Toasted artisanal sourdough bun stuffed generously with sweetened whipped cream cheese and drenched in savory garlic butter.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
